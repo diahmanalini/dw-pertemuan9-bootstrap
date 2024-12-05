@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN jQuery</title>
+</head>
+<body>
+<button id="viewTEXT">Tampilan Text</button>
+<button id="hideTEXT">Sembunyikan Text</button>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis laborum cupiditate ea animi harum fugit laudantium aspernatur atque, perferendis, iure ipsum, architecto ex incidunt officia? Neque officiis quam voluptatum corporis distinctio? Blanditiis temporibus perferendis mollitia modi quam ipsa dolorem fuga, possimus quasi ex optio quidem atque sit, eius porro dolore voluptates eveniet. Reprehenderit deserunt quas tempore odit corporis harum omnis, totam nisi dolorem, quod, placeat commodi nulla? Quo dolorum officiis, id harum totam, suscipit quaerat qui et libero quis praesentium, esse necessitatibus provident tenetur optio facere facilis laborum commodi nulla officia a ullam saepe nobis vero? Commodi fugiat quis vel in nostrum, perspiciatis, asperiores libero sed odio impedit repellat. Maxime quod molestias doloribus porro tenetur natus nulla, voluptatibus illo temporibus consequuntur quisquam dolore harum, dicta totam necessitatibus a ratione sit praesentium delectus! Itaque quo suscipit totam atque praesentium nobis necessitatibus reiciendis, illum nesciunt incidunt pariatur omnis sequi doloribus similique, soluta id accusantium quidem. Inventore nulla doloremque, dolores minima rem, facere ea quaerat recusandae, itaque dolorem accusantium maxime facilis consectetur repellat accusamus aspernatur a quo. Sequi consequuntur incidunt ratione iusto similique veniam cum ipsum libero, omnis sit accusamus? Necessitatibus ad officiis iste ratione laboriosam harum dolorum placeat aut earum commodi eum, quaerat aperiam, ab saepe ex et assumenda voluptatibus quia tempore voluptates accusantium. Aut excepturi natus quia eaque unde architecto expedita recusandae, eum mollitia cum. Natus alias labore reprehenderit excepturi quasi amet. Doloribus enim neque architecto ducimus voluptas et dolores iste impedit, dolorem omnis velit rem explicabo numquam. Hic aspernatur autem, at odit recusandae atque repellat voluptatibus facilis eligendi ipsam reprehenderit, explicabo molestias deleniti voluptatum adipisci non fugit dolorem blanditiis impedit ut alias earum sit. Cum accusantium exercitationem quidem praesentium, tenetur molestias, labore perferendis dolor quod totam saepe illo recusandae. Aperiam praesentium eius eos debitis atque similique, totam nobis voluptatem!
+</p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('p').hide()
+            $('#hideTEXT').hide()
+            $('#viewTEXT').on('click',function(){
+                $('p').show(800)
+                $(this).hide()
+                $('#hideTEXT').show()
+            })
+            //tambahkan script untuk menyembunyikan text,
+            //tombol hidetext dan tampilkan kembali tombol tampilkan text
+        })
+    </script>
+</body>
+</html>
